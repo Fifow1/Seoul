@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+  
+<body>
+
+
+<!-----------------------------------------------------------------------헤더---------------------------------------------------------------------------------------->
+
+<nav class="navbar fixed-top" style="background-color: #6C757D">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#"  style="color: white;"><h3>Logo</h3></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!-----------------------------------------------------------------------제목---------------------------------------------------------------------------------------->
+<br><br>
+<div class="row align-items-center"style="text-align: center; height: 150px;">
+	<div class="col">
+  	  <h1>회원관리</h1>
+  	</div>
+</div>
+<br><br>
+
+<!--------------------------------------------------------------------검색창------------------------------------------------------------------------------------------->
+
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div style="float: left;">
+				<div class="accordion" id="accordionExample" style="width:700px">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">상세검색</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<div class="container">
+									<div style="float: left;">
+										<select class="form-select" aria-label="Default select example">
+											<option selected>성별</option>
+											<option value="1">남자</option>
+											<option value="2">여자</option>
+											<option value="3">기타</option>
+										</select>
+									</div>
+									<div style="float: left;">
+										<select class="form-select" aria-label="Default select example">
+											<option selected>경력구분</option>
+											<option value="1">신입</option>
+											<option value="2">경력자</option>
+											<option value="3">기타</option>
+										</select>
+									</div>
+									<div style="float: left;">
+										<select class="form-select" aria-label="Default select example">
+											<option selected>나이</option>
+											<option value="1">20~25</option>
+											<option value="2">25~30</option>
+											<option value="3">30~35</option>
+											<option value="4">35~40</option>
+										</select>
+									</div>
+									<div style="float: left;">
+										<select class="form-select" aria-label="Default select example">
+											<option selected>직종</option>
+											<option value="1">프로그래머</option>
+											<option value="2">가수</option>
+											<option value="3">선생님</option>
+											<option value="4">기타</option>
+										</select>
+									</div>
+									<div style="float: left;">
+										<select class="form-select" aria-label="Default select example">
+											<option selected>sms수신여부</option>
+											<option value="1">동의</option>
+											<option value="2">미동의</option>
+										</select>
+									</div>
+									<br> <br> <br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div class="container">
+	<div style="float: right;">
+		
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <label class="form-check-label" for="inlineRadio1">번호순</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> <label class="form-check-label" for="inlineRadio2">최신순</label>
+		</div>
+	</div>
+</div>
+
+<br><br>
+<!--------------------------------------------------------------------------------테이블------------------------------------------------------------------------------->
+<div class="container">
+	<table class="table table-success table-striped">
+		<thead>
+			<tr>
+				<th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<d</th>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col">성별</th>
+				<th scope="col">경력구분</th>
+				<th scope="col">직종</th>
+				<th scope="col">이메일</th>
+				<th scope="col">전화번호</th>
+				<th scope="col">등록일자</th>
+				<th scope="col">sms수신여부</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<th scope="row">1</th>
+				<td>함승윤</td>
+				<td>남</td>
+				<td>신입</td>
+				<td>프로그래머</td>
+				<td>lasdldjf</td>
+				<td>010-6477-5721</td>
+				<td>2022.06.23</td>
+				<td>동의</td>
+			</tr>
+			<tr>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<th scope="row">2</th>
+				<td>함승윤</td>
+				<td>남</td>
+				<td>신입</td>
+				<td>가수</td>
+				<td>lasdldjf</td>
+				<td>010-6477-5721</td>
+				<td>2022.06.23</td>
+				<td>미동의</td>
+			</tr>
+			<tr>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<th scope="row">3</th>
+				<td>함승윤</td>
+				<td>남</td>
+				<td>경력자</td>
+				<td>선생님</td>
+				<td>lasdldjf</td>
+				<td>010-6477-5721</td>
+				<td>2022.06.23</td>
+				<td>동의</td>
+			</tr>
+		</tbody>
+	</table>
+		<nav aria-label="Page navigation example">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled"><a class="page-link">Previous</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Next</a></li>
+			</ul>
+		</nav>
+	</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="container">
+	<div class="row" style="float: right;">
+		<div class="col">
+			<button type="button" class="btn btn-secondary" style="width:100px">등록</button>
+			<button type="button" class="btn btn-success" style="width:100px">삭제</button>
+		</div>
+	</div>
+</div>
+
+
+<i class="fa-solid fa-face-smile"></i>
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/50704cc15b.js" crossorigin="anonymous"></script>
+	
+	
+	
+	<!-- end -->
+</body>
+</html>
