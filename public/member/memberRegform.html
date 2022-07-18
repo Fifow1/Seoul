@@ -14,16 +14,15 @@
 		
 		}
 	
-		.row{
-			height: 40px;
-		}
+		.col{
+			height: 50px;
+			text-align: center;
+			padding : 10px 0;
+			margin-bottom: 0px;
+			
+		}	
 		
-		p{
-		text-align: center;
-		padding : 10px 0;
-		margin-bottom: 0px;
 		
-		}
 	
 	
 	</style>
@@ -80,7 +79,14 @@
 <div class="container" >
   <div class="row">
     <div class="col border"><p>지원분야</p></div>
-    <div class="col border"><p><input</p></div>
+    <div class="col border d-flex justify-content-center">
+		<button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">종류</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+			<li><a class="dropdown-item" href="#">Action</a></li>
+			<li><a class="dropdown-item" href="#">Another action</a></li>
+			<li><a class="dropdown-item" href="#">Something else here</a></li>
+		</ul>
+	</div>
     <div class="col border"><p>경력구분</p></div>
     <div class="col border"><p></p></div>
     <div class="col border"><p>희망연봉</p></div>
@@ -91,7 +97,7 @@ style="background-color: D1E7DD;"
 
 <br><br>
 <div class="container">
-	<div class="col-3 border" style="height: 500px; float: left;"> <input type="file" class="form-control" id="inputGroupFile01">1</div>
+	<div class="col-3 border" style="height: 300px; float: left;"> <input type="file" class="form-control" id="inputGroupFile01">	</div>
 	<div class="row">
 		<div class="col border"><p>성명</p></div>
 	    <div class="col border"><p></p></div>
@@ -116,11 +122,16 @@ style="background-color: D1E7DD;"
 	    <div class="col border"><p>나이</p></div>
 	    <div class="col border"><p></p></div>
 	</div>
-</div>
-<div class="row">
-		<div class="col border	"><p>전자우편</p></div>
-	    <div class="col border"><p></p></div>
+	<div class="row">
+		<div class="col border"><p>주소</p></div>
+		<div class="col border"><p></p></div>
 	</div>
+	<div class="row">
+		<div class="col border"><p>취미생활</p></div>
+		<div class="col border"><p></p></div>
+	</div>
+</div>
+
 
 
 
