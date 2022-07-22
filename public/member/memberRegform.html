@@ -91,7 +91,7 @@
 	<br>
 	<br>
 <!-----------------------------------table----------------------------------- -->
-
+<form method="get" action="memberList.html" id="form">
 	<div class="container shadow mb-5 bg-body rounded">
 		<div class="row">
 			<div class="col border">
@@ -213,8 +213,9 @@
 		</div>
 	</div>
 	<div class="container">
-		<button type="button" class="btn btn-secondary" style="width:100px; float:right; "  onclick="location.href='memberList.html'">저장</button>
+		<button type="button" class="btn btn-secondary" style="width:100px; float:right; "  onclick="here();">저장</button>
 	</div>
+</form>
 
 	<h1>1</h1>
 	<h1>1</h1>
@@ -276,7 +277,13 @@
 	<script src="https://kit.fontawesome.com/50704cc15b.js" crossorigin="anonymous"></script>
 	
 	
-	
+	<script type="text/javascript">
+		function here() {
+		alert("저장되었습니다")
+		document.getElementById("form").submit();
+		}
+	</script>
 	<!-- end -->
 </body>
+
 </html>
