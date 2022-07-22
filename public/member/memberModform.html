@@ -25,7 +25,6 @@
 			display: flex;
 			align-items:center; 
 		}
-		
 		#back {
 		background:url(./image/forest.jpg);
 		background-size: cover;
@@ -80,7 +79,7 @@
 
 	<div class="row align-items-center" style="text-align: center; height: 150px;">
 		<div class="col">
-			<h1>입사지원서(등록)</h1>
+			<h1>입사지원서(수정)</h1>
 		</div>
 	</div>
 	<br>
@@ -213,34 +212,32 @@
 		</div>
 	</div>
 	<div class="container">
-		<button type="button" class="btn btn-secondary" style="width:100px; float:right; "  onclick="location.href='memberList.html'">저장</button>
+	<div class="row">
+		<div class="col-3">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제</button>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">삭제하시겠습니까?</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">복구할 수 없습니다.</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-success" data-bs-dismiss="modal">삭제</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-secondary" style="width:100px; float:right;"  onclick="location.href='memberRegform.html'">저장</button>
+		</div>
 	</div>
-	<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-
-<div class="toast-container position-fixed top-0 center">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
-    </div>
-  </div>
 </div>
-<script type="text/javascript">
-	const toastTrigger = document.getElementById('liveToastBtn')
-	const toastLiveExample = document.getElementById('liveToast')
-	if (toastTrigger) {
-	  toastTrigger.addEventListener('click', () => {
-	    const toast = new bootstrap.Toast(toastLiveExample)
 	
-	    toast.show()
-	  })
-	}
-</script>
+
 	<h1>1</h1>
 	<h1>1</h1>
 	<h1>1</h1>
