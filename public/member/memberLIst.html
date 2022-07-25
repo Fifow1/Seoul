@@ -13,6 +13,7 @@
 		background-size: cover;
 		background-attachment: fixed;
 	}
+	
 
 
 	
@@ -39,7 +40,7 @@
 				</div>
 				<div class="offcanvas-body">
 					<div style="float: left;">
-						<button class="btn btn-success" type="submit" >로그인</button>
+						<button class="btn btn-success" type="submit"onclick="location.href='memberLogin.html'" >로그인</button>
 					</div>
 					<div>
 						<button class="btn btn-secondary" type="submit" style="margin-left:5px;">로그아웃</button>
@@ -181,7 +182,7 @@
 	<table class="table table-success table-striped table-hover">
 		<thead>
 			<tr>
-				<th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<th scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check" onclick='selectAll(this)'/>
 				<th scope="col">번호</th>
 				<th scope="col">이름</th>
 				<th scope="col">성별</th>
@@ -195,9 +196,9 @@
 		</thead>
 		<tbody>
 			<tr> 
-				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check"></td>
 				<th scope="row">1</th>
-				<td onclick="location.href='memberModform.html'">함승윤</td>
+				<td onclick="location.href='memberModform.html'" style="cursor: pointer;">함승윤</td>
 				<td>남</td>
 				<td>신입</td>
 				<td>프로그래머</td>
@@ -207,9 +208,9 @@
 				<td>동의</td>
 			</tr>
 			<trd>
-				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check"></td>
 				<th scope="row">2</th>
-				<td  onclick="location.href='memberModform.html'">함승윤</td>
+				<td  onclick="location.href='memberModform.html'" style="cursor: pointer;">함승윤</td>
 				<td>남</td>
 				<td>신입</td>
 				<td>가수</td>
@@ -219,9 +220,9 @@
 				<td>미동의</td>
 			</tr>
 			<tr>
-				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+				<td scope="col"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check"></td>
 				<th scope="row">3</th>
-				<td onclick="location.href='memberModform.html'">함승윤</td>
+				<td onclick="location.href='memberModform.html'" style="cursor: pointer;">함승윤</td>
 				<td>남</td>
 				<td>경력자</td>
 				<td>선생님</td>
@@ -247,7 +248,7 @@
 	<div class="row">
 		<div class="col">
 			<!-- Button trigger modal -->
-			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제</button>
+			<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-trash-can"></i></button>
 			<!-- Modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -264,7 +265,7 @@
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn btn-success" style="width:100px; float:right;"  onclick="location.href='memberRegform.html'">등록</button>
+			<button type="button" class="btn btn-success" style="width:100px; float:right;"  onclick="location.href='memberRegform.html'"><i class="fa-solid fa-plus"></i></button>
 		</div>
 	</div>
 </div>
@@ -276,8 +277,16 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/50704cc15b.js" crossorigin="anonymous"></script>
-	
-	
+	<script type="text/javascript">
+	function selectAll(selectAll)  {
+	  const checkboxes 
+	       = document.getElementsByName('check');
+	  
+	  checkboxes.forEach((checkbox) => {
+	    checkbox.checked = selectAll.checked;
+	  })
+	}
+	</script>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<!-- end -->
 </body>
