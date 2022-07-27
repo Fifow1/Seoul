@@ -6,6 +6,12 @@
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   	<title>회원가입</title>
+  	<style type="text/css">
+  		col {
+  			pa: 0px;
+  		}
+  	
+  	</style>
 </head>
 
 <body>
@@ -45,7 +51,7 @@
 	<br><br>
 	<div class="row">
 		<div class="col"></div>
-		<div class="col">
+		<div class="col p-0">
     		<label for="exampleInputEmail1" class="form-label">아이디</label>
    			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 		</div>
@@ -53,17 +59,152 @@
 	</div>
 	<br>
 	<div class="row">
-		<div class="col" style="padding-left: 450px; padding-right: 450px;">
+		<div class="col"></div>
+		<div class="col p-0">
 			<label for="exampleInputEmail1" class="form-label">비밀번호</label>
    			<input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">		
    		</div>
+   		<div class="col"></div>
 	</div>
 	<br>
-</div>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+			<label for="exampleInputEmail1" class="form-label">비밀번호 확인</label>
+   			<input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">		
+   		</div>
+   		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+			<label for="exampleInputEmail1" class="form-label">성별</label><br>
+			<div style="float: left;">
+   				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+ 				<label class="form-check-label" for="flexRadioDefault1">남자</label>
+ 			</div>
+ 			<div style="float: left; padding-left: 30px;">
+ 				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+ 				<label class="form-check-label" for="flexRadioDefault1">여자</label>
+ 			</div>
+ 			<div style="float: left; padding-left: 30px;">
+ 				<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+ 				<label class="form-check-label" for="flexRadioDefault1">기타</label>
+ 			</div>
+   		</div>
+   		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+			<label for="exampleInputEmail1" class="form-label">생년월일</label>
+   			<input type="date" class="form-control">		
+   		</div>
+   		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<label for="exampleInputEmail1" class="form-label">이메일</label>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		</div>
+		<div class="col d-flex align-items-end"><button type="button" class="btn btn-warning mt-4">인증</button></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<label for="exampleInputEmail1" class="form-label">전화번호</label>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		</div>
+		<div class="col d-flex align-items-end"><button type="button" class="btn btn-warning mt-4">인증</button></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<label for="exampleInputEmail1" class="form-label">우편번호</label>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		</div>
+		<div class="col d-flex align-items-end"><button type="button" class="btn btn-warning mt-4">찾기</button></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<label for="exampleInputEmail1" class="form-label">주소</label>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		</div>
+		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<label for="exampleInputEmail1" class="form-label">상세주소</label>
+   			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br>
+		</div>
+		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  				<label class="form-check-label" for="flexCheckDefault">모두 동의합니다.</label>
+			</div><br>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  				<label class="form-check-label" for="flexCheckDefault">(필수) 이용약관과 개인정보 수집 이용에 동의합니다.</label>
+			</div><br>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  				<label class="form-check-label" for="flexCheckDefault">(필수) 만 14세 이상입니다.만 19세 미만의 미성년자가 결제 시 법정대리인이 거래를 취소할 수 있습니다.</label>
+			</div><br>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  				<label class="form-check-label" for="flexCheckDefault">(선택) 이메일 및 sms 마케팅 정보 수신에 동의합니다. 회원은 언제든지 회원 정보에서 수신 거부로 변경할 수 있습니다.</label>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col p-0">
+    		<button type="button" class="btn btn-dark" style="width: 416px;">가입하기</button>
+		</div>
+		<div class="col"></div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col d-flex justify-content-center" style="padding-left: 0px; padding-right: 30px;">
+   			<button type="button" class="btn btn-primary border-dark"style="width: 80px; height: 80px;margin-left:30px;"><i class="fa-brands fa-facebook"></i></button>
+   			<button type="button" class="btn btn-success border-dark"style="width: 80px; height: 80px;margin-left:30px;"><i class="fa-solid fa-n"></i></button>
+   			<button type="button" class="btn btn-danger border-dark"style="width: 80px; height: 80px;margin-left:30px;"><i class="fa-brands fa-google"></i></button>
+   			<button type="button" class="btn btn-warning border-dark"style="width: 80px; height: 80px;margin-left:30px;"><i class="fa-solid fa-message"></i></button>
+		</div>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/50704cc15b.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
