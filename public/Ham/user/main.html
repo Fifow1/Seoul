@@ -23,7 +23,11 @@
 		text-align: center;
 	}
 	
-
+	.inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 </style>
 </head>
 <body>
@@ -67,22 +71,32 @@
 <!-- body -->
 <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col" style="margin-left: 55px;">
 	    	<br>
-		<p class="" style="text-align: left; font-size: 24px; font-family: 'Edu NSW ACT Foundation', cursive;">Live! Sale</p>
+		<p style="text-align: left; font-size: 24px; font-family: 'Edu NSW ACT Foundation', cursive;">Live! Sale</p>
     	<hr style="width: 400px; color:black;">
     	<br>
-	  </div>
-	</div>
-	<div class="row">
-	    	<div class="col-6" style="width:570px; height:382px; background:url(https://contents.sixshop.com/thumbnails/uploadedFiles/99160/product/image_1592211613846_1000.jpg); background-size: COVER; background-attachment: scroll;background-repeat: no-repeat;"></div>
-	    	<div class="col-6" style="width:570px; height:382px; background:url(https://contents.sixshop.com/thumbnails/uploadedFiles/99160/product/image_1604973738488_1000.jpg); background-size: contain; background-attachment: scroll;"></div>
 		</div>
+	</div>
+	<div class="row" style="display: flex; justify-content: center;">
+	    <div class="col-6" style="width:570px; height:370px; background:url(https://contents.sixshop.com/thumbnails/uploadedFiles/99160/product/image_1592211613846_1000.jpg); background-size: COVER; background-attachment: scroll;background-repeat: no-repeat;"></div>
+	    <div class="col-6 ms-5" style="width:570px; height:370px; background:url(https://contents.sixshop.com/thumbnails/uploadedFiles/99160/product/image_1604973738488_1000.jpg); background-size: contain; background-attachment: scroll;"></div>
+	</div>
+	<br>
+	<div class="row" style="display: flex; justify-content: center;">
+		<div class="col-6" style="width: 570px; height: 20px;"><h5 style= "font-family: 'Edu NSW ACT Foundation', cursive; text-align: center;">MELGEEK MG WAHTSY</h5></div><br>
+		<div class="col-6 ms-5" style="width: 570px; height: 20px;"><h5 style= "font-family: 'Edu NSW ACT Foundation', cursive; text-align: center;">DOMIKEY VILLANELLA</h5></div>
+	</div>
+	
+	<div class="row" style="display: flex; justify-content: center; margin-top: 10px;">
+		<div class="col-6" style="width: 570px; height: 20px;"><h6 style= "text-align: center;">20000원</h6></div>
+		<div class="col-6 ms-5" style="width: 570px; height: 20px;"><h6 style= "text-align: center;">20000원</h6></div>
+	</div>
 </div>
 
 574382
 
-
+font-family: 'Edu NSW ACT Foundation', cursive;
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
